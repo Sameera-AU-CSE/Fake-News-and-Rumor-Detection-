@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="news.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/be93fe35bc.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="#">
+            <img src="https://png.pngtree.com/png-vector/20240421/ourmid/pngtree-fake-news-hoax-media-dissemination-of-false-information-vector-png-image_12303482.png" class="fake-image-logo" />
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto">
+     <a class="nav-link" href="#homeSection">Home</a>
+     <a class="nav-link active" href="#newsSection">What's Fake? News and Rumors<span class="sr-only">(current)</span></a>
+    <a class="nav-link" href="#typesSection">Types of fake news</a>
+    <a class="nav-link" href="#truthSection">Truth vs Misinformations</a>
+    <a class="nav-link" href="#cautionSection">Caution</a>
+</div>
+        </div>
+    </nav>
+    <div class="fake-news-bg w-100 d-flex flex-column justify-content-center" id="homeSection">
+        <div>
+            <h1 class="fake-news-heading slide-left"> Detect <span class="notes"> Fake News</span></h1>
+            <p class=" pt-3 fake-news-description slide-left">Our platform helps you identify misinformation and verify the authenticity of news articles and information online.</p>
+<div id="verify-button-anchor"></div>
+            </div>
+    </div>
+    <div class="news-section pt-5 pb-5" id="newsSection">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="news-section-heading">What's Fake News and Rumors..?</h1>
+                    <p class="news-section-paragraph">A lie can travel halfway around the world while the truth is putting on its shoes.</p>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="p-3 mb-3 shadow news-section-card">
+                        <img src="data:image/webp;base64,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" class="news-image" />
+                        <h1 class="news-section-card-heading"> Introduction</h1>
+                        <p class="news-section-card-description">Fake news and rumors refer to false or misleading information that
+                            spreads among people through media, social networks, or word of mouth.
+                            This information may be completely invented, partially true, or
+                            presented in a misleading way to influence people's beliefs or create confusion.
+                            Fake news is usually intentionally created and published like real news to mislead readers,
+                            gain attention, or influence opinions.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="p-3 mb-3 shadow news-section-card">
+                        <img src="https://static.vecteezy.com/system/resources/previews/005/352/860/original/hand-holding-a-magnifying-glass-looking-for-fake-news-illustration-vector.jpg" class="news-image" />
+                        <h1 class="news-section-card-heading">Causes</h1>
+                        <p class="news-section-card-description">Fake news spreads for many reasons.
+                            One major cause is the rapid growth of social media platforms
+                            where information can be shared instantly without proper verification.
+                            Sometimes people create fake news to gain attention, increase website traffic,
+                            or influence public opinion. In other cases,
+                            users unknowingly share false information without checking its authenticity.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="p-3 mb-3 shadow news-section-card">
+                        <img src="https://thumbs.dreamstime.com/z/fake-news-line-icons-isolated-white-background-social-media-propaganda-newspaper-conspiracy-truth-wrong-facts-information-261152183.jpg" class="news-image" />
+                        <h1 class="news-section-card-heading">Effects</h1>
+                        <p class="news-section-card-description">Fake news can have serious effects
+                            on individuals and society. It spreads misinformation,
+                            which can confuse people and make it difficult to know what is true.
+                            Fake news can also damage the reputation of individuals or organizations
+                            by spreading false claims about them. In addition, it can create fear,
+                            panic, or hatred among communities. In some cases,
+                            fake news may even influence public opinions and decisions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pt-5 types-of-fake-news-section" id="typesSection">
+        <div id="sectionNews">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="pb-5 news-section-heading"> Types Of Fake News & Rumors : </h1>
+                    </div>
+                    <div class=" col-12 col-md-6 col-lg-4">
+                        <div class=" shadow p-3 mb-3 types-of-news-card">
+                            <img src="https://www.poynter.org/wp-content/uploads/2021/09/3beda904983d4a028bae54a2beb2061f.jpeg" class="types-of-fake-news-img w-100" />
+                            <h1 class="news-section-card-heading">Fabricated News </h1>
+                            <p class="news-section-paragraph">Fabricated content means completely false or made-up information that has no real facts or evidence.
+                                It is created intentionally to mislead people,
+                                spread rumors, or attract attention.</p>
+                            <a href="" class="news-link">
+                                View all
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class=" shadow p-3 mb-3 types-of-news-card">
+                            <img src="https://blendtw.com/wp-content/uploads/2020/11/SocialMediaMisinformation_010620_v01_BV_hpMain_16x9_1600.jpg" class="types-of-fake-news-img w-100" />
+                            <h1 class="news-section-card-heading">Misleading Content</h1>
+                            <p class="news-section-paragraph">Misleading content is information that is partly true but presented
+                                in a way that confuses or misleads people.
+                                The facts may be real, but the headline, image,
+                                or explanation makes the audience think something different.</p>
+                            <a href="" class="news-link">
+                                View all
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="shadow p-3 mb-3 types-of-news-card">
+                            <img src="https://tse2.mm.bing.net/th/id/OIP.lCgZdE2bkUVSCvkLTQv9GgHaD4?rs=1&pid=ImgDetMain&o=7&rm=3" class="types-of-fake-news-img w-100" />
+                            <h1 class="news-section-card-heading">Clickbait</h1>
+                            <p class="news-section-paragraph">Clickbait is content with sensational or
+                                exaggerated headlines designed to make people click on a link,
+                                even if the actual information is not important or
+                                is different from the headline.</p>
+                            <a href="" class="news-link">
+                                View all
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mb-5 col-12 col-md-6 col-lg-4">
+                        <div class="shadow p-3 mb-3 types-of-news-card">
+                            <img src="https://ichef.bbci.co.uk/news/1024/branded_news/7C38/production/_111700813_mediaitem111713480.jpg" class="types-of-fake-news-img w-100" />
+                            <h1 class="news-section-card-heading">Health Rumors</h1>
+                            <p class="news-section-paragraph">Health rumors are false or unverified information related to diseases, medicines, treatments, or health practices.
+                                These rumors often spread quickly during health emergencies and can mislead
+                                people into believing unproven cures or dangerous advice.
+                                Health rumors may claim that certain foods, drinks, or
+                                home remedies can prevent or cure serious diseases without any
+                                scientific evidence..</p>
+                            <a href="" class="news-link">
+                                View all
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mb-5 col-12 col-md-6 col-lg-4">
+                        <div class="shadow p-3 mb-3 types-of-news-card">
+                            <img src="https://www.life.org.uk/app/uploads/2023/01/fake-news-desktop.jpg" class="types-of-fake-news-img w-100" />
+                            <h1 class="news-section-card-heading">Manipulated Content</h1>
+                            <p class="news-section-paragraph">Manipulated content
+                                refers to media such as photos, videos, or audio that have been altered or
+                                edited to change their original meaning. This manipulation is done
+                                intentionally to deceive people
+                                or to create a false impression about a person, event, or situation..</p>
+                            <a href="" class="news-link">
+                                View all
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mb-5 col-12 col-md-6 col-lg-4">
+                        <div class="shadow  p-3 mb-3 types-of-news-card">
+                            <img src="https://tse1.mm.bing.net/th/id/OIP.uOjvERX_sLFNIK9M3VigDwHaFj?rs=1&pid=ImgDetMain&o=7&rm=3" class="types-of-fake-news-img w-100" />
+                            <h1 class="news-section-card-heading">Disaster Rumors</h1>
+                            <p class="news-section-paragraph">Disaster rumors are false or
+                                misleading information about natural disasters, accidents, or
+                                emergency situations. These rumors can spread quickly through social
+                                media or messaging apps and may cause unnecessary fear or
+                                panic among the public.</p>
+                            <a href="" class="news-link">
+                                View all
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="news-section" id="truthSection">
+        <div class="container">
+            <div class="row">
+                <div class="pt-6 col-12 col-md-6 order-md-1 ">
+                    <div class=" detect-fake-news-img text-center">
+                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="https://as1.ftcdn.net/v2/jpg/05/62/07/86/1000_F_562078673_92Ogo769miBekhgXUmHed2Eu7pEQEXGL.jpg" class="d-block w-100" alt="..." />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="https://thumbs.dreamstime.com/b/fake-news-disinformation-newspaper-mobile-tablet-screen-fake-news-conspiracy-theory-hoax-disinformation-newspaper-263833944.jpg" class="d-block w-100" alt="..." />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="https://tse3.mm.bing.net/th/id/OIP.BTcgkLfUjGTdQK_TDTexkwHaD4?w=1200&h=628&rs=1&pid=ImgDetMain&o=7&rm=3" class="d-block w-100" alt="..." />
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="pt-6 mb-2 col-12 col-md-6 order-md-2">
+                    <h1 class="truth-heading"> Truth vs Misinformation</h1>
+                    <p class="truth-para">Truth refers to information that is accurate, verifiable, and based on evidence.
+                        It is grounded in facts and can be corroborated through reliable sources,
+                        such as peer-reviewed research, reputable news outlets, or official records.
+                        Truth is essential for informed decision-making, public trust, and the functioning of democratic societies.</p>
+                    <p class="truth-para">Misinformation is false, inaccurate,
+                        or misleading information shared without the intent to deceive.
+                        It often arises from errors, misunderstandings, or incomplete knowledge,
+                        and those spreading it may genuinely believe it to be true.
+                        Examples include rumors, unverified social media posts, or misinterpreted statistics. Misinformation can spread rapidly, especially online, because people often share content based on emotional reactions rather than verification. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="news-section pt-5 pb-5" id="cautionSection">
+        <div class="container">
+            <div class="row">
+                <div class="mb-5 col-12">
+                    <div class="caution-card">
+                        <h1 class="caution-card-heading"> Caution</h1>
+                        <p class="caution-card-paragraph">Be careful of headlines that create strong emotions like fear or excitement, as they are often used to mislead people. Also, check the date and context of the information to avoid being misled by
+                            outdated or edited content. Images and videos can be manipulated,
+                            so they should not be trusted blindly. Most importantly,
+                            avoid forwarding any news without proper verification,
+                            as it can contribute to the spread of misinformation.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+       
+ <script type="text/javascript" src="https://d2clawv67efefq.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+</body>
+</html>

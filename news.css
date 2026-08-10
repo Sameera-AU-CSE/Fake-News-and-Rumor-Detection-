@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+.fake-image-logo {
+    width: 50px;
+    height: 40px;
+}
+
+.fake-news-bg {
+    background-image: url("https://res.cloudinary.com/dkcfqduki/image/upload/v1773401853/6613574_17929_fpwlsz.jpg");
+    height: 100vh;
+    background-size: cover;
+}
+
+.fake-news-heading {
+    font-family: "Lucida Bright";
+    font-size: 55px;
+    color: white;
+    text-align: center;
+
+}
+
+.notes {
+    background-clip: linear-gradient(#0B1D52, #22A2DD);
+    font-weight: 900;
+    font-style: italic;
+}
+
+.fake-news-description {
+    font-family: "Lucida Bright";
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
+
+.text {
+    text-align: center;
+}
+
+.news-section {
+    background-color: #03335C;
+}
+
+.news-section-heading {
+    color: white;
+    font-family: "Bahnschrift";
+    font-size: 35px;
+    font-weight: 500;
+
+}
+
+.news-section-paragraph {
+    color: #5a7184;
+    font-family: "Roboto";
+    font-size: 15px;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.news-image {
+    width: 87px;
+    height: 90px;
+    border-radius: 8px;
+    padding-top: 10px;
+}
+
+.news-section-card {
+    text-align: center;
+    background-color: white;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #e5eaf4;
+    border-radius: 16px;
+}
+
+.news-section-card-heading {
+    color: #051426;
+    font-family: "Roboto";
+    font-size: 25px;
+    font-weight: 500;
+    padding-top: 5px;
+}
+
+.news-section-card-description {
+    color: black;
+    font-family: "Roboto";
+    font-size: 15px;
+}
+
+.types-of-fake-news-section {
+    background-color: #03335C;
+}
+
+.types-of-news-card {
+    background-color: white;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #e5eaf4;
+    border-radius: 16px;
+}
+
+.types-of-fake-news-img {
+    border-radius: 16px;
+}
+
+.news-link {
+    color: #051426;
+    font-family: "Roboto";
+    font-size: 15px;
+    text-decoration: underline;
+}
+
+.slide-left {
+    opacity: 0;
+    transform: translateX(-50px);
+    animation: slideLeft 1.5s ease forwards;
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 2s ease-in forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideLeft {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.detect-fake-news-img {
+    width: 470px;
+    height: 490px;
+    border-radius: 8px;
+}
+
+.truth-heading {
+    color: white;
+    font-family: "Bahnschrift";
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.truth-para {
+    color: white;
+    font-family: "Bahnschrift";
+    font-size: 15px;
+    font-style: italic;
+}
+
+.caution-card {
+    text-align: center;
+}
+
+.caution-card-heading {
+    color: white;
+    font-family: "Roboto";
+    font-size: 35px;
+    font-weight: 500;
+
+}
+
+.caution-card-paragraph {
+    color: white;
+    font-family: "Roboto";
+    font-size: 15px;
+
+}
+
+.follow-us-section {
+    background-color: white;
+}
+
+.follow-us-section-heading {
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 28px;
+    color: #183b56;
+    text-align: center;
+}
+
+.icon {
+    color: black;
+    height: 80px;
+    width: 80px;
+    margin: 13px;
+}
+.footer-section {
+    background-color: #fafbfc;
+}
+
+.footer-section-mail-id {
+    color: #000104;
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.footer-section-address {
+    color: #000000;
+    font-family: "Roboto";
+    font-size: 14px;
+}
+
+/* --- VERIFICATION PAGE STYLES --- */
+
+/* పూర్తి పేజీకి బ్యాక్‌గ్రౌండ్ ఇమేజ్/గ్రేడియంట్ */
+[data-testid="stAppViewContainer"] {
+    background-image: linear-gradient(135deg, #e0f7fa 0%, #bbdefb 100%); /* లైట్ బ్లూ గ్రేడియంట్ */
+    background-attachment: fixed;
+}
+
+/* ప్రధాన కంటైనర్ బాక్స్ (Main Container) */
+.main-box {
+    background: rgba(255, 255, 255, 0.95); /* వైట్ బ్యాక్‌గ్రౌండ్ - కొద్దిగా ట్రాన్స్‌పరెంట్ */
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    margin: 20px auto;
+    max-width: 900px;
+    border: 1px solid rgba(255,255,255,0.3);
+    backdrop-filter: blur(10px); /* బ్లర్ ఎఫెక్ట్ */
+}
+
+/* AI Powered Verification ట్యాగ్ */
+.internal-tag {
+    background-color: #1f4e79;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+/* "నిజమా? అబద్ధమా?" బటన్ స్టైల్ */
+[data-testid="stBaseButton-secondary"] {
+    background: linear-gradient(135deg, #1f4e79 0%, #0d2a4a 100%) !important;
+    color: white !important;
+    border-radius: 25px !important;
+    padding: 10px 25px !important;
+    font-weight: bold !important;
+    transition: transform 0.2s, box-shadow 0.2s !important;
+    border: none !important;
+}
+
+[data-testid="stBaseButton-secondary"]:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2) !important;
+}
+
+/* ఫలితం చూపించే బాక్స్ (Analysis Result) */
+div.stSuccess {
+    background-color: rgba(212, 237, 218, 0.9) !important;
+    color: #155724 !important;
+    border: 1px solid #c3e6cb !important;
+    border-radius: 15px !important;
+    padding: 20px !important;
+    font-size: 16px !important;
+    line-height: 1.6 !important;
+}
+
+/* "Back to Home" బటన్ స్టైల్ */
+[data-testid="stBaseButton-primary"] {
+    background: white !important;
+    color: #1f4e79 !important;
+    border: 2px solid #1f4e79 !important;
+    border-radius: 25px !important;
+    padding: 5px 20px !important;
+}
+
+[data-testid="stBaseButton-primary"]:hover {
+    background: #1f4e79 !important;
+    color: white !important;
+}
+
+/* "Verify News Now" button ki creative mariyu pedda size style */
+.custom-button {
+    background: linear-gradient(135deg, #007bff 0%, #00d4ff 100%); /* Bright gradient color */
+    color: white;
+    font-size: 24px; /* Pedda font size */
+    font-weight: bold;
+    padding: 15px 40px; /* Size penchadaaniki padding */
+    border: none;
+    border-radius: 50px; /* Round shapes for creative look */
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 212, 255, 0.4); /* Glow shadow effect */
+    transition: all 0.3s ease; /* Smooth animation kosam */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/* Mouse hover chesinappudu vacche badhalu */
+.custom-button:hover {
+    transform: translateY(-5px) scale(1.05); /* Paiki lechi, koncham peddadhi avthundhi */
+    box-shadow: 0 8px 25px rgba(0, 212, 255, 0.6); /* Shadow inkaa bright avthundhi */
+    background: linear-gradient(135deg, #00d4ff 0%, #007bff 100%); /* Color rotate avthundhi */
+    text-decoration: none;
+    color: white;
+}
+
+/* Button click chesinappudu effect */
+.custom-button:active {
+    transform: translateY(0);
+}
+
+/* Streamlit Header, Deploy Button, and Menu ని హైడ్ చేయడానికి */
+header, [data-testid="stHeader"] {
+    visibility: hidden;
+    height: 0%;
+}
+
+#MainMenu {
+    visibility: hidden;
+}
+
+footer {
+    visibility: hidden;
+}
+
+.stDeployButton {
+    display: none;
+}
+
+/* news.css lo ekkadainaa add cheyandi */
+html {
+    scroll-behavior: smooth;
+}
