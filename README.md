@@ -12,7 +12,7 @@ Misinformation and online rumors spread rapidly across social media platforms. T
 ## 🛠️ Tech Stack & Methods
 
 * **Preprocessing & NLP:** Python, RegEx, NLTK, Scikit-Learn (`TF-IDF Vectorizer`, `CountVectorizer`)
-* **Machine Learning Algorithms:** Logistic Regression, Naive Bayes, Support Vector Machines (SVM)
+* **Machine Learning Algorithms:** Logistic Regression, Random Forest, Support Vector Machines (SVM)
 * **Backend:** Python API framework
 * **Frontend:** HTML5, CSS3, JavaScript
 
